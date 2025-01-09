@@ -150,24 +150,16 @@
 		E489EBF22D2FDCF800D07049 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E489EBFB2D2FDF2A00D07049 /* 1 */,
+				E489EBF32D2FDD0700D07049 /* Card.swift */,
+				E489EBF52D2FDDAC00D07049 /* Player.swift */,
+				E489EBF72D2FDDDF00D07049 /* Game.swift */,
+				E489EBF92D2FDE1600D07049 /* GameSettings.swift */,
 				E489EBFC2D2FDF5A00D07049 /* HandRanking.swift */,
 				E489EBFE2D2FDFAC00D07049 /* BettingRound.swift */,
 				E489EC002D2FDFC400D07049 /* Action.swift */,
 				E489EC022D2FE03700D07049 /* GameState.swift */,
 			);
 			name = Models;
-			sourceTree = "<group>";
-		};
-		E489EBFB2D2FDF2A00D07049 /* 1 */ = {
-			isa = PBXGroup;
-			children = (
-				E489EBF32D2FDD0700D07049 /* Card.swift */,
-				E489EBF52D2FDDAC00D07049 /* Player.swift */,
-				E489EBF72D2FDDDF00D07049 /* Game.swift */,
-				E489EBF92D2FDE1600D07049 /* GameSettings.swift */,
-			);
-			path = 1;
 			sourceTree = "<group>";
 		};
 		E489EC042D2FE09800D07049 /* Utils */ = {
