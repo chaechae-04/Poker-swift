@@ -14,6 +14,15 @@
 		E489EBDA2D2FDAC900D07049 /* PokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBD92D2FDAC900D07049 /* PokerTests.swift */; };
 		E489EBE42D2FDAC900D07049 /* PokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBE32D2FDAC900D07049 /* PokerUITests.swift */; };
 		E489EBE62D2FDAC900D07049 /* PokerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBE52D2FDAC900D07049 /* PokerUITestsLaunchTests.swift */; };
+		E489EBF42D2FDD0700D07049 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBF32D2FDD0700D07049 /* Card.swift */; };
+		E489EBF62D2FDDAC00D07049 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBF52D2FDDAC00D07049 /* Player.swift */; };
+		E489EBF82D2FDDDF00D07049 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBF72D2FDDDF00D07049 /* Game.swift */; };
+		E489EBFA2D2FDE1600D07049 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBF92D2FDE1600D07049 /* GameSettings.swift */; };
+		E489EBFD2D2FDF5A00D07049 /* HandRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBFC2D2FDF5A00D07049 /* HandRanking.swift */; };
+		E489EBFF2D2FDFAC00D07049 /* BettingRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EBFE2D2FDFAC00D07049 /* BettingRound.swift */; };
+		E489EC012D2FDFC400D07049 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC002D2FDFC400D07049 /* Action.swift */; };
+		E489EC032D2FE03700D07049 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC022D2FE03700D07049 /* GameState.swift */; };
+		E489EC062D2FE0A900D07049 /* HandEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC052D2FE0A900D07049 /* HandEvaluator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		E489EBDF2D2FDAC900D07049 /* PokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E489EBE32D2FDAC900D07049 /* PokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerUITests.swift; sourceTree = "<group>"; };
 		E489EBE52D2FDAC900D07049 /* PokerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E489EBF32D2FDD0700D07049 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		E489EBF52D2FDDAC00D07049 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		E489EBF72D2FDDDF00D07049 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		E489EBF92D2FDE1600D07049 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
+		E489EBFC2D2FDF5A00D07049 /* HandRanking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandRanking.swift; sourceTree = "<group>"; };
+		E489EBFE2D2FDFAC00D07049 /* BettingRound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BettingRound.swift; sourceTree = "<group>"; };
+		E489EC002D2FDFC400D07049 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		E489EC022D2FE03700D07049 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		E489EC052D2FE0A900D07049 /* HandEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandEvaluator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +112,8 @@
 		E489EBC72D2FDAC700D07049 /* Poker */ = {
 			isa = PBXGroup;
 			children = (
+				E489EC042D2FE09800D07049 /* Utils */,
+				E489EBF22D2FDCF800D07049 /* Models */,
 				E489EBC82D2FDAC700D07049 /* PokerApp.swift */,
 				E489EBCA2D2FDAC700D07049 /* ContentView.swift */,
 				E489EBCC2D2FDAC800D07049 /* Assets.xcassets */,
@@ -125,6 +145,37 @@
 				E489EBE52D2FDAC900D07049 /* PokerUITestsLaunchTests.swift */,
 			);
 			path = PokerUITests;
+			sourceTree = "<group>";
+		};
+		E489EBF22D2FDCF800D07049 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E489EBFB2D2FDF2A00D07049 /* 1 */,
+				E489EBFC2D2FDF5A00D07049 /* HandRanking.swift */,
+				E489EBFE2D2FDFAC00D07049 /* BettingRound.swift */,
+				E489EC002D2FDFC400D07049 /* Action.swift */,
+				E489EC022D2FE03700D07049 /* GameState.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E489EBFB2D2FDF2A00D07049 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				E489EBF32D2FDD0700D07049 /* Card.swift */,
+				E489EBF52D2FDDAC00D07049 /* Player.swift */,
+				E489EBF72D2FDDDF00D07049 /* Game.swift */,
+				E489EBF92D2FDE1600D07049 /* GameSettings.swift */,
+			);
+			path = 1;
+			sourceTree = "<group>";
+		};
+		E489EC042D2FE09800D07049 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E489EC052D2FE0A900D07049 /* HandEvaluator.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +308,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E489EBF62D2FDDAC00D07049 /* Player.swift in Sources */,
+				E489EC012D2FDFC400D07049 /* Action.swift in Sources */,
+				E489EBF82D2FDDDF00D07049 /* Game.swift in Sources */,
+				E489EBFF2D2FDFAC00D07049 /* BettingRound.swift in Sources */,
+				E489EBFA2D2FDE1600D07049 /* GameSettings.swift in Sources */,
+				E489EC062D2FE0A900D07049 /* HandEvaluator.swift in Sources */,
 				E489EBCB2D2FDAC700D07049 /* ContentView.swift in Sources */,
+				E489EBFD2D2FDF5A00D07049 /* HandRanking.swift in Sources */,
+				E489EC032D2FE03700D07049 /* GameState.swift in Sources */,
+				E489EBF42D2FDD0700D07049 /* Card.swift in Sources */,
 				E489EBC92D2FDAC700D07049 /* PokerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
