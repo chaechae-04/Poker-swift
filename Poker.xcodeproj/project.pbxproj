@@ -23,6 +23,9 @@
 		E489EC012D2FDFC400D07049 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC002D2FDFC400D07049 /* Action.swift */; };
 		E489EC032D2FE03700D07049 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC022D2FE03700D07049 /* GameState.swift */; };
 		E489EC062D2FE0A900D07049 /* HandEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC052D2FE0A900D07049 /* HandEvaluator.swift */; };
+		E489EC092D312BBC00D07049 /* PokerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC082D312BBC00D07049 /* PokerView.swift */; };
+		E489EC0C2D312D6300D07049 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC0B2D312D6300D07049 /* MainButton.swift */; };
+		E489EC0E2D31306A00D07049 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = E489EC0D2D31306A00D07049 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		E489EC002D2FDFC400D07049 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		E489EC022D2FE03700D07049 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		E489EC052D2FE0A900D07049 /* HandEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandEvaluator.swift; sourceTree = "<group>"; };
+		E489EC082D312BBC00D07049 /* PokerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerView.swift; sourceTree = "<group>"; };
+		E489EC0B2D312D6300D07049 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		E489EC0D2D31306A00D07049 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,8 @@
 		E489EBC72D2FDAC700D07049 /* Poker */ = {
 			isa = PBXGroup;
 			children = (
+				E489EC0A2D312D5400D07049 /* Components */,
+				E489EC072D312BAC00D07049 /* Views */,
 				E489EC042D2FE09800D07049 /* Utils */,
 				E489EBF22D2FDCF800D07049 /* Models */,
 				E489EBC82D2FDAC700D07049 /* PokerApp.swift */,
@@ -158,6 +166,7 @@
 				E489EBFE2D2FDFAC00D07049 /* BettingRound.swift */,
 				E489EC002D2FDFC400D07049 /* Action.swift */,
 				E489EC022D2FE03700D07049 /* GameState.swift */,
+				E489EC0D2D31306A00D07049 /* Deck.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -168,6 +177,22 @@
 				E489EC052D2FE0A900D07049 /* HandEvaluator.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		E489EC072D312BAC00D07049 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E489EC082D312BBC00D07049 /* PokerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E489EC0A2D312D5400D07049 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E489EC0B2D312D6300D07049 /* MainButton.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,8 +325,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E489EC0E2D31306A00D07049 /* Deck.swift in Sources */,
 				E489EBF62D2FDDAC00D07049 /* Player.swift in Sources */,
 				E489EC012D2FDFC400D07049 /* Action.swift in Sources */,
+				E489EC092D312BBC00D07049 /* PokerView.swift in Sources */,
 				E489EBF82D2FDDDF00D07049 /* Game.swift in Sources */,
 				E489EBFF2D2FDFAC00D07049 /* BettingRound.swift in Sources */,
 				E489EBFA2D2FDE1600D07049 /* GameSettings.swift in Sources */,
@@ -310,6 +337,7 @@
 				E489EBFD2D2FDF5A00D07049 /* HandRanking.swift in Sources */,
 				E489EC032D2FE03700D07049 /* GameState.swift in Sources */,
 				E489EBF42D2FDD0700D07049 /* Card.swift in Sources */,
+				E489EC0C2D312D6300D07049 /* MainButton.swift in Sources */,
 				E489EBC92D2FDAC700D07049 /* PokerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
